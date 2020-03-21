@@ -1,3 +1,3 @@
 # TER
-Comment va votre Hôtel
+Comment va votre Hôtel    
 This is our project about Hotel comments.
