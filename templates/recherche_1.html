@@ -22,19 +22,18 @@
   </form>
 
 
-<p > <a href="#"onclick="fonc(this);" >la chambre est spacieuse,propre et organisée.</a> </p>
-<p > <a href="#"onclick="fonc(this);" >Le personnel est sympathique et présent .</a> </p>
+<p > <a href="#"onclick="fonc(this);" >la chambre est spacieuse, propre , jolie et organisée.</a> </p>
+<p > <a href="#"onclick="fonc(this);" >Le personnel est sympathique et présent, le restaurant est bien propre .</a> </p>
 
 <p><a href="#"onclick="fonc(this);" >La chambre est spacieuse pour deux adultes .  
-La propreté  est impeccable. 
 Le personnel est super sympa. 
 Le petit-déjeuner est très correct.</a></p>
 
 
-<p><a href="#"onclick="fonc(this);" >la chambre très propre,le matelas est super confortable.</a></p>
+<p><a href="#"onclick="fonc(this);" >la chambre très propre,le matelas est super confortable mais le balcon et trop petit.</a></p>
 
 <p><a href="#"onclick="fonc(this);" >le chauffage ne marche pas mais 
-la la vue du balcon est magnifique, </a></p>
+ la vue du balcon est magnifique, </a></p>
 
 
   <body>
@@ -45,8 +44,8 @@ la la vue du balcon est magnifique, </a></p>
     {% endif %}
     {% endblock %}
     {% block sorties %}
-    {% if listenoms is defined and not none %}
-    {% for key, value in listenoms.items() %}
+    {% if Noms_Resultat is defined and not none %}
+    {% for key, value in Noms_Resultat.items() %}
     <p> le nom est : <b> {{key}} , </b> le score est: <b>{{value}} </b> </p>
     {% endfor %}
     {% endif %}
@@ -94,7 +93,7 @@ la la vue du balcon est magnifique, </a></p>
     <div id='main'>
       <table>
         <tr>
-          {% for variable in crt %}
+          {% for variable in listCriteres %}
           {% if variable in listeadjectifs %}
 
           <p>
@@ -110,7 +109,7 @@ la la vue du balcon est magnifique, </a></p>
             </td>
           </p>
           </p>
-          {%  elif variable in noms %}
+          {%  elif variable in lesNoms_index%}
           <p>
             <td>
               <p style="color:green" ;> {{ variable}}
@@ -134,25 +133,23 @@ la la vue du balcon est magnifique, </a></p>
 
     <hr />
     {%   block res %}
-    <div id="mainn">
-      <ul>
+    
+      
         {% if mm is defined and mm is not none %}
-        {% for s,b in mm.items() %}
-        {% for x in b %}
+    
 
 
 
 
-        <li>
-          <p style="color:black" ;> </p> {{x}}
-        </li>
+        
+        <pre style="color:black" ;> {{mm}}</pre> 
+        
 
 
 
-        {% endfor %}
-        {% endfor %}
-      </ul>
-    </div>
+       
+      
+    
     {% endif %}
 
 
