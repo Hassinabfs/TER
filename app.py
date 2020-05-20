@@ -271,7 +271,7 @@ def recherche():
                 for second in secondRound:
                                   
                     Noms_Resultats[first] = second # ajout des resultats dans un dictionnaire pour l'affichage dans le navigateur
-            
+            print("le non resultat",Noms_Resultats)
         with open('Data/dic.json') as ontologie:  #  ouverture de fichier ontologie
             ontologi = json.load(ontologie)
             fichier_ontologie = dict(ontologi)
@@ -371,7 +371,7 @@ def recherche():
         
         import pymongo
         client = pymongo.MongoClient("mongodb://localhost:27017/")
-        d = client["TER_DataBase"] # creation d'une base de données
+        d = client["TER_DataBase1"] # creation d'une base de données
         col = d["customer"]
         dicResultats = dict(resultats) #ajout les resultats de traitement de chaque morceau dans un dictionnaire
         x = col.insert_one(dicResultats) #on insére le resultat dans la base de données

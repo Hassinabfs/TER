@@ -28,7 +28,7 @@ h1{
 	background-image: url(https://www.ilunionhotels.fr/cache/f7/1a/f71a49b5badd864ef97ccd15de58061b.jpg);
 	color: black;
     justify-items: center;
-    height: 10em;
+    height: 11em;
     
 	
 }
@@ -72,12 +72,13 @@ table{
     margin-top: 0.4em;
     margin-left:0em ;
     float: left;
-    width: 48em;
+    width: 50%;
+   
     
     }
     
  #partieD {
-    margin-top: 0.4em;
+    margin-top: 0em;
     margin-right: 5em;
     float:right;
     
@@ -113,4 +114,5 @@ table{
     margin: 2%;
 } 
 
- 
+a{color: rgb(39, 113, 163);}
+a:hover{color: brown;}

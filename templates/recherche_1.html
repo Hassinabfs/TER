@@ -30,20 +30,10 @@
 
     </form>
 
-    <!-- 
-  <p> <a href="#" onclick="fonc(this);"> la chambre est propre , spacieuse et organisée </a> </p>
-
-  <p><a href="#" onclick="fonc(this);"> le personnel est sympathique et présent </a></p>
-  <a href="#" onclick="fonc(this);"> la chambre est très propre mais le matelas n'est pas confortable </a></p>
-
-  <p><a href="#" onclick="fonc(this);">la chambre et la douche sont propre mais le jardin est sale </a></p>
-
-  <p><a href="#" onclick="fonc(this);"> la chambre est belle et le jardin est beau </a></p>
-  <p><a href="#" onclick="fonc(this);"> la chambre est belle et le jardin est beau , la douche est propre , l'accueil
-      est bien </a></p> -->
+    
 
 
-    <p> <a href="http://localhost:5000/"> Accueil </a></p>
+    <p> <a href="http://localhost:5000/"><-Accueil </a></p></br>
     {{tagList}}
 
     {% block i %}
@@ -172,7 +162,14 @@
     <p> <b> Le nombre d'avis positifs </b>: {{positif}}, <progress id="positif" max="700" value="{{pos}}">
       </progress>{{pos}} points </p>
 
-    {% endif %}
+    {% endif %}</br>
+  <p style="color:rgb(39, 93, 163)" > <b>Avis proposés:</b> </p> 
+  <p> <a href="#" onclick="fonc(this);"> la chambre est très propre, belle, spacieuse et organisée </a> </p>
+
+  <p><a href="#" onclick="fonc(this);"> Le personnel est sympathique et présent .</a></p>
+  <a href="#" onclick="fonc(this);"> La couette et le sommier sont sales, le matelas n'est pas confortable.</a></p>
+  <p><a href="#" onclick="fonc(this);"> La soirée était agréable , le buffet était trop bon </a></p>
+  <p><a href="#" onclick="fonc(this);"> La chambre est lumineuse, le jardin est parfait, le café est délicieux.  </a></p> 
 
   </div>
 
@@ -195,6 +192,7 @@
       input_elem.value = element.innerHTML;
     }
   </script>
+
 
 </body>
 
